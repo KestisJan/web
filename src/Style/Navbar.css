@@ -1,81 +1,88 @@
 .navbar {
     width: 100%;
-    height: 8vh;
-    background-color: rgb(125, 177, 131);
-}
-.links {
+    height: 100px;
+    background: #21325e;
+  }
+  
+  .links {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     color: white;
-}
-
-.navbar a {
-    color: black;
-    text-decoration: none;
-    margin: 15px;
-    font-size: 1.5em;
   }
-.navbutton {
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 25px;
+  }
+  
+  .navbutton {
     width: 100%;
-    height: 70px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-}
-
-.navbutton svg {
-    font-size: 40px;
-}
-
-.navbutton button {
-    margin-right: 2em;
+  }
+  
+  .navbutton svg {
+    font-size: 50px;
+  }
+  .navbutton button {
+    margin-right: 20px;
     background-color: transparent;
     border: none;
-    color: black;
+    color: white;
     cursor: pointer;
-}
-
-#open .links {
+  }
+  
+  #open {
+    height: 100vh;
+  }
+  
+  #open .links {
     flex-direction: column;
     justify-content: flex-start;
     margin-top: 100px;
-}
-
-#open a {
+  }
+  
+  #open a {
     width: 100%;
     text-align: center;
-}
-
-@media only screen and (max-width: 900px) {
+  }
+  
+  @media only screen and (max-width: 900px) {
     .navbar a {
-        width: 70px;
+      width: 70px;
     }
-}
-
-@media only screen and (max-width: 600px) {
-    .navbutton {
-        display: flex;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .toggleButton {
+      display: flex;
     }
     #close a {
-        display: none;
+      display: none;
     }
-}
-
-@media only screen and (min-width: 600px) {
-    .navbutton {
-        display: none;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    .toggleButton {
+      display: none;
     }
+  
     .hiddenLinks {
-        display: none;
+      display: none;
     }
+  
     #open {
-        height: 100px;
+      height: 100px;
     }
+  
     #open .links {
-        flex-direction: row;
+      flex-direction: row;
     }
-}
-
+  }

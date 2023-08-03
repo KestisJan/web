@@ -1,8 +1,39 @@
-import React from 'react'
+import React from 'react';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/Email';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import '../Style/Home.css';
 
 function Home() {
   return (
-    <div>Home</div>
+    <div className='home'>
+      <div className='about'>
+        <h2>Welcome to my page </h2>
+        <div className='prompt'>
+          <p>A full stack developer with a passion for learning new things</p>
+          <LinkedInIcon/>
+          <EmailIcon/>
+          <GitHubIcon/>
+        </div>
+        <div className='skills'>
+          <h1>Skills</h1>
+          <ol className='list'>
+            <li className='item'>
+              <h2>Front-End</h2>
+              <span>ReactJS, HTML, CSS, SCSS</span>
+            </li>
+            <li className='item'>
+              <h2>Back-End</h2>
+              <span>NodeJS, MySQL, Laravel</span>
+            </li>
+            <li className='item'>
+              <h2>Languages</h2>
+              <span>Javascript, PHP</span>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
   )
 }
 
